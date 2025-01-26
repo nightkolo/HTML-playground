@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            body {
+                font-family: sans-serif;
+            }
+            button {
+                border: none;
+                border-radius: 10px;
+                
+                margin-left: 5px;
+                margin-right: 5px;
+                margin-top: 5px;
+                margin-bottom: 5px;
+
+                padding-right: 15px;
+                padding-left: 15px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+
+                font-weight: bold;
+                transition: opacity 0.25s;
+                cursor: pointer;
+                
+                transition: 
+                    margin-left 0.3s cubic-bezier(.6,-0.25,.5,2),
+                    margin-right 0.3s cubic-bezier(.6,-0.25,.5,2),
+                    padding-left 0.3s cubic-bezier(.6,-0.25,.5,2),
+                    padding-right 0.3s cubic-bezier(.6,-0.25,.5,2);
+            }
+            button:hover {
+                opacity: 0.75;
+                margin-left: 0px;
+                margin-right: 0px;
+                padding-right: 20px;
+                padding-left: 20px;
+            }
+            button:active {
+                opacity: 0.5;
+            }
+            a:hover {
+                font-weight: bold;
+            }
+            a:active {
+                color: red;
+            }
+            .red-notice {
+                color: red;
+            }
+            .btn-add-to-cart {
+                background-color: rgb(217, 217, 0);
+            }
+            .btn-buy-now {
+                background-color: rgb(195, 195, 0);
+            }
+            .btn-stretch {
+                padding: 12px;
+                height: 40px;
+                width: 110px;
+               transition:
+                    width 0.2s cubic-bezier(.6,-0.25,.5,1.25),
+                    height 0.2s cubic-bezier(.6,-0.25,.5,1.25);
+            }
+            .btn-stretch:hover {
+                width: 220px;
+                height: 72px;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="https://www.amazon.com">Back to Amazon</a>
+        <h1>Nike Black Running Shoes</h1>
+        <p class="red-notice">$39.99 in stock.</p>
+        <p>Free delivery tomorrow.</p>
+        <button class="btn-add-to-cart">Add to Cart</button>
+        <button class="btn-buy-now">Buy now</button>
+        <br>
+        <button class="btn-margin">Hey</button>
+        <button class="btn-margin">Hey</button>
+        <button class="btn-margin">Hey</button>
+        <br>
+        <button class="btn-stretch">Hey</button>
+    </body>
+</html>

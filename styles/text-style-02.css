@@ -1,0 +1,114 @@
+html {
+    background-color: beige;
+}
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+hr {
+    opacity: 0.375;
+}
+
+#text-body {
+    width: 50%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+    #text-body {
+    width: 75%;
+    }
+}
+
+@media (max-width: 750px) {
+    #text-body {
+    width: 100%;
+    }
+}
+
+.shadow-effect {
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.125);
+    transition: all 200ms;
+}
+
+.shadow-effect:hover {
+    box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.175);
+}
+
+.p-text-body {
+    opacity: 0.8;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.06);
+    border-radius: 25px;
+    transition: all 200ms;
+}
+
+.p-text-body:hover {
+    opacity: 1.0;
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+}
+
+.skills-to-learn {
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.08);
+    border-radius: 25px;
+    transition: all 200ms;
+}
+
+.skills-to-learn:hover {
+    background-color: rgba(0, 0, 0, 0.02);
+    border-radius: 10px;
+}
+
+.author-info {
+    display: inline;
+    vertical-align: middle;
+    margin-left: 20px;
+    opacity: 0.75;
+    opacity: 0.5;
+    padding: 0px;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+    transition: all 350ms;
+}
+
+.author-info:hover {
+    opacity: 0.75;
+    padding: 0px;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 0px;
+}
+
+.img-pfp {
+    display: inline;
+    vertical-align: middle;
+    width: 50px;
+    border-radius: 12px;
+}
+
+.img-pfp:hover {
+    transform: scale(1.12);
+}
+
+
+li {
+    margin-top: 0;
+    margin-bottom: 0;
+    list-style-type: circle;
+}
+
+li li { /* ??? */
+    list-style-type: square;
+}
+
+.h-topic {
+    font-weight: bold;
+    transition: font-weight 125ms;
+}
+
+.h-topic:hover {
+    font-weight: 900;
+}
