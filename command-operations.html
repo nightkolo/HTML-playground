@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html style="background-color: beige;">
+    <head>
+        <!-- Get Nunito font from google fonts -->
+        
+        <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap" rel="stylesheet">
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Terminal Command Cheat Sheet for Finder Operations</title>
+        <style>
+        table {
+            width: 50%;
+            border-collapse: collapse;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+            text-align: left;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        h1, h2 {
+            color: #333;
+        }
+        ul {
+            list-style-type: none;
+        }
+        li::before {
+            content: "•";
+            color: #333;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+        }
+        </style>
+    </head>
+    <body style="font-family: 'Nunito', sans-serif;">
+        <h1 id="terminal-command-cheat-sheet-for-finder-operations">Terminal Command Cheat Sheet for Finder Operations</h1>
+        <h2 id="table-of-contents">Table of Contents</h2>
+        <ul>
+        <li><a href="#terminal-command-cheat-sheet-for-finder-operations">Terminal Command Cheat Sheet for Finder Operations</a><ul>
+        <li><a href="#table-of-contents">Table of Contents</a></li>
+        <li><a href="#file-operations">File Operations</a></li>
+        <li><a href="#directory-operations">Directory Operations</a></li>
+        <li><a href="#search-compression">Search &amp; Compression</a></li>
+        <li><a href="#quick-tips">Quick Tips</a></li>
+        </ul>
+        </li>
+        </ul>
+        <h2 id="file-operations">File Operations</h2>
+        <table>
+        <thead>
+        <tr>
+        <th><strong>Action</strong></th>
+        <th><strong>Command</strong></th>
+        <th><strong>Example</strong></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><strong>Rename a file</strong></td>
+        <td><code>mv old_name new_name</code></td>
+        <td><code>mv file.txt newfile.txt</code></td>
+        </tr>
+        <tr>
+        <td><strong>Duplicate a file</strong></td>
+        <td><code>cp filename duplicate_name</code></td>
+        <td><code>cp file.txt file_copy.txt</code></td>
+        </tr>
+        <tr>
+        <td><strong>Move a file</strong></td>
+        <td><code>mv filename /path/to/destination/</code></td>
+        <td><code>mv file.txt ~/Documents/</code></td>
+        </tr>
+        <tr>
+        <td><strong>Delete a file</strong></td>
+        <td><code>rm filename</code></td>
+        <td><code>rm file.txt</code></td>
+        </tr>
+        <tr>
+        <td><strong>Open a file</strong></td>
+        <td><code>open filename</code></td>
+        <td><code>open file.txt</code></td>
+        </tr>
+        <tr>
+        <td><strong>Get file info</strong></td>
+        <td><code>ls -l filename</code></td>
+        <td><code>ls -l file.txt</code></td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="directory-operations">Directory Operations</h2>
+        <table>
+        <thead>
+        <tr>
+        <th><strong>Action</strong></th>
+        <th><strong>Command</strong></th>
+        <th><strong>Example</strong></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><strong>Create a directory</strong></td>
+        <td><code>mkdir directory_name</code></td>
+        <td><code>mkdir new_folder</code></td>
+        </tr>
+        <tr>
+        <td><strong>Copy a directory</strong></td>
+        <td><code>cp -r source_dir destination_dir</code></td>
+        <td><code>cp -r folder1 folder2</code></td>
+        </tr>
+        <tr>
+        <td><strong>Move a directory</strong></td>
+        <td><code>mv source_dir /path/to/destination/</code></td>
+        <td><code>mv folder1 ~/Documents/</code></td>
+        </tr>
+        <tr>
+        <td><strong>Delete a directory</strong></td>
+        <td><code>rm -r directory_name</code></td>
+        <td><code>rm -r folder1</code></td>
+        </tr>
+        <tr>
+        <td><strong>List contents</strong></td>
+        <td><code>ls</code></td>
+        <td><code>ls ~/Documents</code></td>
+        </tr>
+        <tr>
+        <td><strong>Show hidden files</strong></td>
+        <td><code>ls -a</code></td>
+        <td><code>ls -a ~/Documents</code></td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="search-compression">Search &amp; Compression</h2>
+        <table>
+        <thead>
+        <tr>
+        <th><strong>Action</strong></th>
+        <th><strong>Command</strong></th>
+        <th><strong>Example</strong></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+        <td><strong>Search for a file</strong></td>
+        <td><code>find /path -name &quot;filename&quot;</code></td>
+        <td><code>find ~/Documents -name &quot;*.txt&quot;</code></td>
+        </tr>
+        <tr>
+        <td><strong>Compress files/dir</strong></td>
+        <td><code>zip -r archive_name.zip file_or_dir</code></td>
+        <td><code>zip -r archive.zip folder1</code></td>
+        </tr>
+        <tr>
+        <td><strong>Extract a ZIP file</strong></td>
+        <td><code>unzip archive_name.zip</code></td>
+        <td><code>unzip archive.zip</code></td>
+        </tr>
+        </tbody>
+        </table>
+        <h2 id="quick-tips">Quick Tips</h2>
+        <ul>
+        <li>Replace <code>/path/to/destination/</code> with the target folder&#39;s path.</li>
+        <li>Use <code>~</code> as a shortcut for the home directory.</li>
+        <li>Hidden files start with <code>.</code> (e.g., <code>.hiddenfile</code>), and you can view them with <code>ls -a</code>.</li>
+        <li><strong>Be cautious with <code>rm</code></strong>: it permanently deletes files or folders.</li>
+        </ul>
+
+    </body>
+</html>
