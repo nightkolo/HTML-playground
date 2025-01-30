@@ -1,3 +1,9 @@
+:root {
+    --main-bg-brightness: 15;
+    --main-bg-color: rgb(var(--main-bg-brightness), var(--main-bg-brightness), var(--main-bg-brightness));
+}
+
+
 html {
     background-color: beige;
 }
@@ -11,7 +17,7 @@ hr {
 }
 
 footer {
-    opacity: 0.5;
+    opacity: 0.3;
     transition: all 400ms;
 }
 
@@ -20,30 +26,33 @@ footer:hover {
 }
 
 
-#text-body {
+#div-text-body {
     width: 50%;
     margin: 0 auto;
 }
 
 @media (max-width: 1000px) {
-    #text-body {
+    #div-text-body {
         width: 75%;
     }
 }
 
 @media (max-width: 750px) {
-    #text-body {
-        width: 100%;
+    #div-text-body {
+        width: 90%;
     }
+    /* .p-author-info, .img-pfp {
+        display: block;
+    } */
 }
 
 .shadow-effect {
-    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.175);
+    box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.125);
     transition: all 200ms;
 }
 
 .shadow-effect:hover {
-    box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 1px 8px 10px rgba(0, 0, 0, 0.25);
 }
 
 .footer-text {
@@ -77,7 +86,7 @@ footer:hover {
     border-radius: 10px;
 }
 
-.author-info {
+.p-author-info {
     display: inline;
     vertical-align: middle;
     margin-left: 20px;
@@ -88,7 +97,7 @@ footer:hover {
     transition: all 350ms;
 }
 
-.author-info:hover {
+.p-author-info:hover {
     opacity: 0.75;
     padding: 0px;
     opacity: 1;
@@ -101,6 +110,7 @@ footer:hover {
     vertical-align: middle;
     width: 50px;
     border-radius: 12px;
+    transition: all 350ms;
 }
 
 .img-pfp:hover {
