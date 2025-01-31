@@ -1,0 +1,11 @@
+/* Default CSS styling */
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+html {
+  background-color: beige;
+}
+
+body, button, input {
+    font-family: 'Nunito', sans-serif;
+}
