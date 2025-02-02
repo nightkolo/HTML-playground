@@ -1,0 +1,53 @@
+main {
+  margin: 0 auto;
+  max-width: 1000px;
+  background-color: #00000000;
+}
+.div-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 20px;
+  row-gap: 40px;
+}
+.grid-entry {
+  padding: 10px 30px 10px 30px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px #00000000;
+  background-color: rgba(255, 255, 255, 0.25);
+  border: solid;
+  border-width: 6px;
+  border-color: rgba(0, 0, 0, 0.5);
+  transition: all 100ms;
+}
+.grid-entry:hover {
+  transform: scale(1.025);
+  box-shadow: 1px 10px 10px #0000003e;
+  background-color: rgba(255, 255, 255, 0.75);
+}
+/* h1, p {
+  margin: 0;
+} */
+h1, p {
+  margin: 8px 0px 8px 0px;
+}
+/* .grid-1 {
+  background-color: lightblue;
+}
+.grid-2 {
+  background-color: lightpink;
+} */
+.entry-tag {
+  color: snow;
+  padding: 3px 8px 3px 8px; 
+  margin: 0px 7px 0px 0px;
+  box-shadow: 1px 10px 10px #0000002a;
+  border-radius: 10px;
+  /* cursor: ; find a normal cursor style */
+}
+.entry-date, .entry-type {
+  opacity: 0.5;
+  margin-right: 15px;
+}
+.p-entry-summary {
+  opacity: 0.75;
+}
