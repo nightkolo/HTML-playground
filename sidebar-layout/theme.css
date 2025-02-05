@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+
+html {
+  background-color: beige;
+}
+
+body, button, input {
+    font-family: 'Nunito', sans-serif;
+}
+.img-pfp {
+  width: 50px;
+  border-radius: 50px;
+  box-shadow: 1px 1px 10px #0000001d;
+  transition: all 300ms;
+}
+.img-pfp:hover {
+  transform: scale(1.1);
+  box-shadow: 1px 8px 10px #00000026;
+}
+.span-light-hover {
+  opacity: 0.5;
+  transition: opacity 300ms;
+}
+.span-light-hover:hover {
+  opacity: 1.0;
+}
+.a-button {
+  border: none;
+  padding: 10px 20px 10px 20px;
+  background-color: #00000000;
+  border-radius: 10px;
+  transition: all 300ms;
+}
+.a-button:hover {
+  background-color: #00000013;
+}
+.div-content-bars {
+  border-radius: 10px;
+  margin: 0px 10px 0px 10px;
+  box-shadow: 1px 4px 10px rgba(0, 0, 0, 0.15);
+}
+hr {
+  opacity: 0.75;
+  width: 90%;
+}
+.entry-tag {
+  color: snow;
+  padding: 3px 8px 3px 8px; 
+  margin: 0px 7px 0px 0px;
+  box-shadow: 1px 10px 10px #0000002a;
+  border-radius: 10px;
+  /* cursor: ; find a normal cursor style */
+}
+#div-container {
+  width: 80%;
+  max-width: 900px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+
+#div-content-container {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: row;
+}
+
+#div-main {
+  background-color: rgba(0, 0, 0, 0.068);
+  width: 70%;
+  padding: 20px;
+}
+
+#div-sidebar {
+  background-color: rgba(0, 0, 0, 0.041);
+  box-shadow: 1px 3px 10px rgba(0, 0, 0, 0.1);
+  width: 30%;
+  padding: 20px;
+  height: 100%;
+  transition: all 200ms cubic-bezier(.5,0,.75,3);
+}
+#div-sidebar:hover {
+  box-shadow: 1px 10px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.0125);
+}
+#div-footer {
+  padding: 60px 0px 60px 0px;
+}
+footer {
+  text-align: end;
+}
+span {
+  opacity: 0.5;
+}
+span:hover {
+  opacity: 1.0;
+}
